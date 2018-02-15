@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <menu.h>
 
-void partie_dipso(){
+void (*partie_dipso)(){
 	int partie;					/*choix de la partie*/
 	
 	do{
@@ -13,9 +14,9 @@ void partie_dipso(){
 		
 		/*Le joueur choisi une des parties */
 		do{
-			printf("Choix de la partie? );
+			printf("Choix de la partie?" );
 			scanf("%d", &partie);
-			if (partie < 1 || partie > 3){
+			if (partie < 1 || partie > 4){
 				printf("Partie non existante");
 			}
 		}while(partie < 1 || partie > 4);

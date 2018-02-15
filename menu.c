@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+//#include <menu.h>
 
 
 /*fonction correspondant au menu qui n'entre pas dans le jeu avec un bouton nouvelle partie, 
@@ -25,7 +26,7 @@ void menu_exterieur(){
 			/*traitement du choix du joueur*/
 		switch (rep){
 			case 1 :
-				printf("Fonction à faire"); break;
+				printf("de"); /*partie_dispo();*/ break;
 			case 2 : 
 				printf("Fonction à faire"); break; 
 			case 3 : 
